@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>tick-tock</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div>
+        <audio id="audio_tick" src="tick.wav" type="audio/wav" preload>
+        <audio id="audio_tock" src="tock.wav" type="audio/wav" preload>
+    </div>
+    <div>
+        Beats Per Minute = <input type="number" id="bpm" value="120"><br>
+        Beats = <input type="number" id="beats" value="4"><br>
+        <button id="play" onclick="toggle()">Play!</button>
+    </div>
+    <script src="./repeat.js"></script>
+</body>
+</html>
