@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>tick-tock</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row"><div class="col right">Beats Per Minute</div><div class="col left"><input type="number" id="bpm" value="120" min="1" max="360"></div></div>
+        <div class="row"><div class="col right">Beats </div><div class="col left"><input type="number" id="beats" value="4" min="1" max="36"></div></div>
+        <div class="row"><div class="col center"><button id="play" onclick="toggle()">Play!</button></div></div>
+    </div>
+    <div class="hidden">
+            <audio id="audio_tick" src="tick.wav" type="audio/wav" preload>
+            <audio id="audio_tock" src="tock.wav" type="audio/wav" preload>
+        </div>
+    <script src="./repeat.js"></script>
+</body>
+</html>
