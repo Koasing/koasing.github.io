@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+input  { width: 4rem; }
+button { width: 100%; }
+
+@media (min-width:320px)  {
+    .container { width: 100%; }
+}
+
+@media (min-width:480px)  {
+    .container { width: 30rem; }
+}
+
+.row { display: flex; flex-wrap: wrap; }
+.col { flex-basis: 0; flex-grow: 1; max-width: 100%; padding: 0rem 0.5rem; }
+
+.left   { text-align: left;   }
+.right  { text-align: right;  }
+.center { text-align: center; }
+.hidden { display: hidden;    }
